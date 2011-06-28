@@ -1,0 +1,22 @@
+--- origsrc/gedit-cossa-3.0.1/src/Makefile.am	2011-06-02 05:19:11.000000000 -0500
++++ src/gedit-cossa-3.0.1/src/Makefile.am	2011-06-27 20:23:53.646334300 -0500
+@@ -27,8 +27,8 @@ libcossa_la_SOURCES = \
+ 	gedit-cossa-plugin.h     \
+ 	gedit-cossa-plugin.c
+ 
+-libcossa_la_LDFLAGS = $(COSSA_FLAGS)
+-libcossa_la_LIBADD  = $(COSSA_LIBS) libcossa-common.la
++libcossa_la_LDFLAGS = -module -avoid-version -no-undefined
++libcossa_la_LIBADD  = libcossa-common.la $(COSSA_LIBS)
+ 
+ bin_PROGRAMS = cossa-standalone-previewer
+ 
+@@ -38,7 +38,7 @@ cossa_standalone_previewer_SOURCES = \
+ 	cossa-main.c
+ 
+ cossa_standalone_previewer_LDFLAGS = $(COSSA_FLAGS)
+-cossa_standalone_previewer_LDADD = $(COSSA_LIBS) libcossa-common.la
++cossa_standalone_previewer_LDADD = libcossa-common.la $(COSSA_LIBS)
+ 
+ plugin_in_files = cossa.plugin.desktop.in
+ 
