@@ -1,0 +1,13 @@
+inherit gnome2
+
+NAME="gedit-cossa"
+VERSION=3.2.0
+RELEASE=2
+CATEGORY="Editors GNOME"
+SUMMARY="Gedit GTK+ theme preview plugin"
+DESCRIPTION="gedit-cossa is a CSS previewer for GTK+ themes, integrating with
+gedit so the edited CSS is promptly visible in the various samples. It may be
+easily extended with more samples and allows zooming these to help get the
+tiny details right."
+
+PATCH_URI="3.0.1-ldflags.patch"

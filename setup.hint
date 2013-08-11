@@ -1,7 +1,0 @@
-category: Editors Gnome
-requires: gedit libcairo2 libglib2.0_0 libgtk3_0 libintl8 libpeas1.0_0
-sdesc: "Gedit GTK+ theme preview plugin"
-ldesc: "gedit-cossa is a CSS previewer for GTK+ themes, integrating with 
-gedit so the edited CSS is promptly visible in the various samples. 
-gedit-ossa may be easily extended with more samples and allows zooming 
-these to help get the tiny details right."
